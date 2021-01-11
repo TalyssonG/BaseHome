@@ -1,0 +1,147 @@
+body, h1,p,ul,li {
+    margin: 0px;
+    padding: 0px;
+    
+
+}
+
+body {
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    color: #222222;
+    background-color: #000;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+.superbase-bg{
+background: rgb(17, 17, 17);
+}
+
+.menu{
+    max-width: 960px;
+	margin: 0 auto;
+	padding: 15px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+
+.menu a {
+    color: white;
+}
+
+.menu-logo a{
+   
+    font-size: 2.25em;
+	font-weight: bold;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav h2{
+    font-size: 0.5em;
+    margin: 0 auto;
+    background:white;
+    padding:9px;
+    border-radius: 5px;
+    color: #000;
+    
+}
+
+.menu-nav a{
+    font-size: 1.25em;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+/* Sobre */
+
+.sobre{
+    border-top: 2px solid #e6efa9 ;
+    border-bottom: 2px solid #e6efa9 ;
+	
+    max-width: 960px;
+    margin: 0 auto;
+    padding:  60px 0;
+    display: flex;
+    flex-wrap:wrap ;
+}
+
+.sobre-info{
+    flex: 2 1 300px;
+    margin: 0 10px;
+}
+
+.sobre-info h1 {
+	font-size: 4em;
+    margin-bottom: .5em;
+    color: #e6efa9;
+}
+
+.sobre-info p {
+	font-size: 1em;
+	line-height: 1.4;
+	margin-bottom: 1em;
+	color: #7c7c7c;
+}
+
+.sobre-img {
+	flex: 1 1 430px;
+	margin: 0 10px;
+}
+/* form */
+
+#fist{
+    padding:12px;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    background-color:#222222 ;
+    border-radius: 8px;
+    border: none;
+    
+    
+}
+
+#seg{
+    padding:12px;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    background-color:#4ec352 ;
+    border-radius: 10px;
+    border: none;
+    width: 160px;
+    color: white;
+    cursor: pointer;
+
+
+}
+
+.footer {
+	display: flex;
+	background: #222222;
+	height: 200px;
+    align-items: center;
+}
+
+.footer p {
+	flex: 1;
+	text-align: center;
+	font-size: 2.25em;
+	color: white;
+}
