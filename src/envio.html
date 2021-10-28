@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar uma imagem</title>
+
+    <link rel="stylesheet" href="../style/envio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header id="header">
+        <div></div>
+        <a href="index.html"><span></span> Voltar para a Home</a>
+    </header>
+    
+    <main id="content">
+        <form action="salvarDados.php" method="GET" enctype="multipart/form-data">
+            <h2>Enviar uma imagem:</h2>
+
+            <label for="image-input">
+                <div id="file-background">
+                    <div id="dashed">
+    
+                        <span></span>
+                        <p>Click aqui para escolher uma imagem.</p>
+                    </div>
+
+                    <img id="output">
+                </div>
+            </label>
+
+            <input type="file" name="image" id="image-input" onchange="loadFile(event)" accept="image/png, image/jpeg">
+            
+            <h2>Informaçoes da imagem:</h2>
+
+            <div id="fields-group">
+                <div class="field">
+                    <h3>Nome do proprietário:</h3>
+
+                    <input required type="text" name="nomeUser" class="field-input">
+                </div>
+
+                <div class="field">
+                    <h3>Nome da imagem:</h3>
+
+                    <input required type="text" name="title" class="field-input">
+                </div>
+            </div>
+
+            <div id="buttoms">
+                <input type="reset" value="Cancelar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
